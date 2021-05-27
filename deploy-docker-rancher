@@ -1,0 +1,4 @@
+openssl genrsa -des3 -out rootCA.key 2048
+openssl req -x509 -new -nodes -key rootCA.key -sha256 -days 1825 -out rootCA.pem
+openssl genrsa -out rancher.mo.vn.key 2048
+openssl req -new -key rancher.mo.vn.key -out rancher.mo.vn.csr

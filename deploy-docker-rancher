@@ -1,4 +1,6 @@
-openssl genrsa -des3 -out rootCA.key 2048
-openssl req -x509 -new -nodes -key rootCA.key -sha256 -days 1825 -out rootCA.pem
-openssl genrsa -out rancher.mo.vn.key 2048
-openssl req -new -key rancher.mo.vn.key -out rancher.mo.vn.csr
+1. install docker-ce ( luu y chon dung phien ban duoc ho tro)
+2. install rancher server
+2.1. docker pull percona
+2.2. docker pull rancher/server
+3. cau hinh ssl, proxy cho rancher server
+4. add host cho rancher
